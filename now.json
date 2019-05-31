@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "svg-chart",
+  "builds": [
+    {
+      "src": "src/**/*.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/pie/donut.svg",
+      "dest": "/src/pie/donut.js"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "svg-chart",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "now dev"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
