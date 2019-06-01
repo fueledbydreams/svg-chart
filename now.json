@@ -1,16 +1,19 @@
 {
-  "version": 2,
-  "name": "svg-chart",
+  "alias": [
+    "svg-chart.fueledbydreams.com"
+  ],
   "builds": [
     {
       "src": "src/**/*.js",
       "use": "@now/node"
     }
   ],
+  "name": "svg-chart",
   "routes": [
     {
       "src": "/pie/donut.svg",
       "dest": "/src/pie/donut.js"
     }
-  ]
+  ],
+  "version": 2
 }
