@@ -4,6 +4,7 @@ module.exports = (req, res) => {
   const { query } = parse(req.url, true);
   const progress = parseInt(query.p, 10) || 0;
   const max = parseInt(query.m, 10) || 10;
+  const percentage = Math.floor((progress / max) * 100);
   const options = query.options || {};
   const opts = {
     background: '#EEEEEE',
@@ -14,7 +15,7 @@ module.exports = (req, res) => {
     paddingX: 17,
     paddingY: 10,
     ...options
-  }
+  };
   const svg = `
     <svg width="${opts.width - opts.paddingX}px" height="58px" viewBox="0 0 ${opts.width - opts.paddingX} 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
