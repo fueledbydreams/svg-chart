@@ -13,6 +13,10 @@
     {
       "src": "/pie/donut.svg",
       "dest": "/src/pie/donut.js"
+    },
+    {
+      "src": "/line/progress.svg",
+      "dest": "/src/line/progress.js"
     }
   ],
   "version": 2
